@@ -60,24 +60,6 @@ class LERLCCritic(nn.Module):
         prompt_template = """\
 [Candidate Categories]
 Available categories for selection: {candidate_categories}
-
-[User Interaction Summary]
-The user interacted with the following items during this session:
-{interaction_history}
-Session statistics: Total steps = {total_step}, Cumulative reward = {cumulative_reward}
-
-[Your Task]
-Reflect on the session in exactly three sentens:
-1) Disengagement Signals: Signs of low interest or poor recommendation match; 
-2) Repetition Effects: Negative effects of repeated content;
-3) Actionable Insights: Strategy suggestions for better engagement.
-
-[Answer]
-Use natural language. Keep total length under 40 words. No intro or conclusion.
-"""
-        prompt_template = """\
-[Candidate Categories]
-Available categories for selection: {candidate_categories}
         
 [User Interaction Summary]
 The user's interactions during this session:

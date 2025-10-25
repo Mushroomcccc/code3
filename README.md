@@ -35,11 +35,11 @@ nohup python run_llama/run_llama3.py &
 On KuaiRand:
 ```
 cd code
-bash scripts/run_multibehavior_rec.sh
+bash scripts/run_multibehavior.sh
 ```
 On KuaiRec:
 ```
-bash scripts/train_multi_behavior_user_response_rec.sh
+bash scripts/run_multibehavior_rec.sh
 ```
 
 ### 🎯 3.3 Running the  Policy
@@ -50,6 +50,6 @@ bash scripts/train_lerlc.sh
 On KuaiRec：
 
 ```
-bash scripts/train_lerlc.sh
+bash scripts/train_lerlc_rec.sh
 ```
 
